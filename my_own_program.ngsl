@@ -1,0 +1,6 @@
+let x = c(1, 2, 3, 4, 5);
+let y = x * 2 + rnorm(10, 0, 1);
+let mean_x = mean(x);
+let sd_x = sd(x);
+let z = x + y;
+let r = cor(x, y);
