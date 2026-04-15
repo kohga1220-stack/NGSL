@@ -1,13 +1,33 @@
 # NGSL
 
-Next-Generation Statistical Language (NGSL) の初期実装。
+NGSL: custom numerical grammar language with R-like data.frame and CSV support.
 
-## 目的
+## Overview
 
-Lexer と Parser をまず実装し、EBNFに基づくAST生成まで動かす。
+NGSL is a custom numerical grammar language built on NumPy/SciPy. It supports data.frame-style data manipulation, CSV import/export, and R-like column access using both `df.V1` and `df$V1` syntax.
 
-## 使い方
+## Usage
 
-1. Python 3.11 以上をインストール
-2. `pip install -e .`
-3. `pytest`
+1. Install Python 3.11 or later
+2. Install the package in editable mode:
+   ```bash
+   pip install -e .
+   ```
+3. Run tests:
+   ```bash
+   pytest
+   ```
+
+## Features
+
+- data.frame construction and column access
+- read.csv / write.csv support with `header`, `sep`, and `row.names`
+- basic statistical functions and matrix operations
+- interpreter for a custom DSL with R-style syntax
+
+## Plot files
+
+This repository also contains generated plot files for data analysis:
+- `achievement_vs_spresent.svg`
+- `achievement_vs_sfeedpos.svg`
+- `correlation_matrix.svg`
